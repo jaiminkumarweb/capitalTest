@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div id="mainContainer">
+
+       <ul *ngFor="let data of scope.articles">
+         <h3>{{data.source.name}}</h3>
+         <li>{{data.title}}</li>
+         <li>{{data.publishedAt | date: 'dd/MM/yyyy'}}</li>
+         <li>{{data.description}}</li>
+         <li *ngIf="data.urlToImage"><img src={{data.urlToImage}} class="image" /></li>
+         <li><a href={{data.url}}>URL</a></li>
+       </ul>
+</div>

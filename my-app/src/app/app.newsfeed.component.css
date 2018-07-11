@@ -1,0 +1,10 @@
+#mainContainer{
+    position: absolute;
+    display: inline-block;
+    padding: 15px;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+}
